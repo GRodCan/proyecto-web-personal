@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
         <h1>Pelusasbusters</h1>
-        <p>Bienvenidos al emocionante mundo de la pelusidad. En Pelusasbusters podrás encontrar toda la información relevante sobre las Pelusas, así como recomendaciones útiles para sobrevivir en caso de un encuentro con ellas.</p>
-        <nav>
-            <a href="../index.html">Home Pelusasbusters</a>
-            <a href="./biografia.html">Pelusas a través de la Historia</a>
-            <a href="./portfolio.html">Avistamientos y documentación multimedia</a>
-            <a href="./contacto.html">Tu Experiencia</a>
+        <section class="header">
+            <div>
+                <p class="header">Bienvenidos al emocionante mundo de la pelusidad. En Pelusasbusters podrás encontrar toda la información relevante sobre las Pelusas, así como información y recomendaciones útiles para sobrevivir en caso de un encuentro con ellas.</p>
+
+            </div>
+            <nav class="header">
+                <a href="../index.html" class="navegador">Home Pelusasbusters</a>
+                <a href="./biografia.html"class="navegador">Pelusas a través de la Historia</a>
+                <a href="./portfolio.html" class="navegador">Avistamientos y documentación multimedia</a>
+                <a href="./contacto.html" class="navegador">Tu Experiencia</a>
+            </nav>
+        </section>
     </header>
     <main>
 <section>
@@ -82,8 +90,8 @@
             <label for="aspirador">Aspirador</label>
             <input type="checkbox" name="aspiradormano" id="aspiradormano">
             <label for="aspiradormano">Aspirador de mano</label>
-            <input type="checkbox" name="rumba" id="ruma">
-            <label for="rumba">Rumba a.k.a. Letal Pelusa Killer</label>
+            <input type="checkbox" name="roomba" id="ruma">
+            <label for="roomba">Roomba a.k.a. Letal Pelusa Killer</label>
         </div>
         <div>
             <label for="limpieza">¿Cuantas veces limpias tu domicilio a la semana?</label>
@@ -101,6 +109,7 @@
         <div>
         <label for="experienciapersonal">Cuentanos tu experiencia:</label>
         <textarea rows = "5" cols = "60" name = "description" placeholder="Escriba aquí su experiencia..." id="experienciapersonal"></textarea>
+        <label for="archivomultimedia">Cargue aquí cualquier archivo relacionado:</label><input type="file" name="archivomultimedia" id="archivomultimedia">
         <input type="submit" value="Enviar"> <input type="reset" value="Restablecer">
     </div>
     </form>

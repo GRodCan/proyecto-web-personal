@@ -5,43 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-               
-    </style>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    
 </head>
 <body>
     <header>
         <h1>Pelusasbusters</h1>
-        <p>Bienvenidos al emocionante mundo de la pelusidad. En Pelusasbusters podrás encontrar toda la información relevante sobre las Pelusas, así como recomendaciones útiles para sobrevivir en caso de un encuentro con ellas.</p>
-        <nav>
-            <a href="../index.html">Home Pelusasbusters</a>
-            <a href="./biografia.html">Pelusas a través de la Historia</a>
-            <a href="./portfolio.html">Avistamientos y documentación multimedia</a>
-            <a href="./contacto.html">Tu Experiencia</a>
+        <section class="header">
+            <div>
+                <p class="header">Bienvenidos al emocionante mundo de la pelusidad. En Pelusasbusters podrás encontrar toda la información relevante sobre las Pelusas, así como información y recomendaciones útiles para sobrevivir en caso de un encuentro con ellas.</p>
+
+            </div>
+            <nav class="header">
+                <a href="../index.html" class="navegador">Home Pelusasbusters</a>
+                <a href="./biografia.html"class="navegador">Pelusas a través de la Historia</a>
+                <a href="./portfolio.html" class="navegador">Avistamientos y documentación multimedia</a>
+                <a href="./contacto.html" class="navegador">Tu Experiencia</a>
+            </nav>
+        </section>
     </header>
     <main>
         <section>
             <h2>Imagenes sobre pelusas</h2>
             <p>Las siguientes imagenes son 100% reales, no son aptas para personas susceptibles y/o facilmente impresionable.</p>
-            <h3>Proporcionadas por medios oficiales:</h3>
-            <label for="imagenoficial">Elija una foto</label>
-            <select name="imagenoficial" id="imagenoficial">
-                <option value="agricultura-ganaderia-silvicultura-pesca" id="agricultura-ganaderia-silvicultura-pesca">Pelusa</option>
-                <option value="industriaextractiva">Industrias extractivas</option>
-                <option value="industriamanufacturera">Industria manufacturera</option>
-                <option value="suministro-energíaeléct-gas-vapor-aire acondicionado">Suministro de energía eléctrica, gas, vapor y aire acondicionado</option>
-                <option value="suministro-agua-saneamiento-gestiónresiduos-descontaminación">Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación</option> 
-                <option value="construccion">Construcción</option>
-                <option value="comercio-reparaciónvehiculos">Comercio al por mayor y al por menor, reparación de vehículos de motor y motocicletas</option>
-                <option value="transporte-almacenamiento">Transporte y almacenamiento</option>
-                <option value="hosteleria">Hosteleria</option>
-            </select>
-            <img src="../assets/images/pelusa.jpg" alt="Pelusa">
-            <img src="../assets/images/historialimpieza_avantservicios.jpg" alt="">
-            <img src="../assets/images/hitler.jpg" alt="">
+            <div id="contenedor-imagenes">
+                <img src="../assets/images/pelusa.jpg" alt="Una pelusa">
+                <img src="../assets/images/pelusa3.jpeg" alt="Otra Pelusa">
+                <img src="../assets/images/pelusa4.jpeg" alt="Y otra más">
+                <img src="../assets/images/pelusa-ombligo.jpeg" alt="Pelusa intentando morder a humano en el ombligo">
+                
+                <img src="../assets/images/plinio-el-viejo-Vesubio-Pompeya-erupcion-79-k3OH--1200x630@abc.jpg" alt="Victima del Pelusubio en Pompeya.">
+                <img src="../assets/images/letrina_romana_limpieza.jpg" alt="Ilustración de la limpieza romana, baños incluidos">
+                <img src="../assets/images/barbecho-feudal.jpg" alt="En la Edad Media se segaban los campos para que las pelusas no acechasen en ellos.">
+                <img src="../assets/images/haciendo-escobas.jpg" alt="En la edad Media se empezó a trabajar en la producción de escobas">
+                <img src="../assets/images/renacimiento_las_meninas.jpg" alt="Los vestidos anchos eran llevados para barrer más superficie a su paso.">
 
+
+                <img src="../assets/images/historialimpieza_avantservicios.jpg" alt="Valientes soldados patrullando en la Primera Guerra Pelusa.">
+
+
+
+
+            </div>
         </section>
 
+        <section>
+            <h2>Videografía pelusil</h2>
+            <p>Investigación sobre pelusas de la Universitat Pompeu Fabra:
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d7bMGRk3tT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Pelusa acechando a humano desprevenido</p>
+            <video src="../assets/video/al-acecho.mp4" controls></video>
+            <p>Roomba a.k.a. Letal Pelusa Killer en acción:</p>
+            <video src="../assets/video/roomba-pelusa-killer.mp4" controls></video>        
+        </section>
+
+        <section>
+            <h2>Audios y psicofonías capturadas</h2>
+            <p>Rugido de pelusa silvestre en la Sierra de Gredos:
+            </p>
+            <audio src="../assets/sound/angry-beastwav-6172.mp3" controls></audio>
+            <p>Las pelusas conspirando contra ti por la noche debajo de tu sofá:</p>
+            <audio src="../assets/sound/ghostly-whispers-6085.mp3" controls></audio>
+            <p>La marcha de una pelusa dispuesta a matar:</p>
+            <audio src="../assets/sound/footsteps_grass_1wav-6810.mp3" controls></audio>
+        </section>
     </main>
     <footer>
         <p> Gracias por visitar Pelusasbusters</p>
