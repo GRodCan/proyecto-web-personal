@@ -24,11 +24,12 @@
             </nav>
         </section>
     </header>
-    <main>
-<section>
+    <main id="main-contacto">
+
+<article>
     <h2>Encuesta de seguridad ciudadana ante Pelusas</h2>
     <p>En colaboración con el Ministerio de Defensa, estamos realizando un estudio sobre el riesgo al que estaría expuesto la población española ante una invasión pelusil, nos sería de gran utilidad si usted pudiese colaborar rellenando los siguientes campos:</p>
-    <form action="">
+    <form action="" id="seguridadciudadana">
         <div>
 
             <label for="age">Edad (fecha de nacimiento):</label>
@@ -55,13 +56,14 @@
                 <option value="educación">Educación</option>
                 <option value="actividadessanitarias-serviciossociales">Actividades sanitarias y de servicios sociales</option>
                 <option value="Actividadesartísticas-recreativas-entretenimiento">Actividades artísticas, recreativas y de entretenimiento</option>
-                <option value="otrosservicios">Otros servicios</option>
                 <option value="Actividadeshogares-comoempleadorespersonaldoméstico-comoproductoresbienes-serviciosusopropio">Actividades de los hogares como empleadores de personal doméstico, como productores de bienes y servicios para uso propio</option>
                 <option value="Actividadesorganizaciones-organismosextraterritoriales">Actividades de organizaciones y organismos extraterritoriales</option>
+                <option value="otrosservicios">Otros servicios</option>
                 <option value="estudiante">Estudiante</option>
             </select>
         </div>  
-            <p>Conocimientos sobre las Pelusas</p>
+        <div id="reaccion">
+            <p>Reacción ante pelusas según su conocimiento:</p>
             <input type="radio" name="conocimiento" id="socorropelusa" value="1">
             <label for="socorropelusa">¡Socorro, una pelusa, vamos a morir!</label>
             <input type="radio" name="conocimiento" id="ohnopelusas" value="2">
@@ -72,12 +74,13 @@
             <label for="damemiescoba">Una pelusa, cogeré la escoba</label>
             <input type="radio" name="conocimiento" id="masterpelusakiller" value="5">
             <label for="masterpelusakiller">Soy la encarnación de la limpieza, pelusas ¡morir!</label>
+        </div>    
         <div>
             <label for="sensacionseguridad">Como de seguro se siente actualmente de cara a una invasión pelusil (de 0 a 10)</label>
             <input type="range" name="sensacionseguridad" id="sensacionseguridad" min="0" max="10" step="1">
         </div>
-        <div>
-            <p>Armas presentes en su domicilio</p>
+        <div id="armas">
+            <p>Armas presentes en su domicilio:</p>
             <input type="checkbox" name="trapo" id="trapo">
             <label for="trapo">Trapo</label>
             <input type="checkbox" name="escoba" id="escoba">
@@ -91,7 +94,7 @@
             <input type="checkbox" name="aspiradormano" id="aspiradormano">
             <label for="aspiradormano">Aspirador de mano</label>
             <input type="checkbox" name="roomba" id="ruma">
-            <label for="roomba">Roomba a.k.a. Letal Pelusa Killer</label>
+            <label for="roomba"><i>Roomba <abbr title="as know as">a.k.a.</abbr> Letal Pelusa Killer</i></label>
         </div>
         <div>
             <label for="limpieza">¿Cuantas veces limpias tu domicilio a la semana?</label>
@@ -101,19 +104,26 @@
 
 
     </form>
-</section>
-<section id="experienciaconpelusas">
+</article>
+<article id="experienciaconpelusas">
     <h2>¿Experiencias con Pelusas?</h2>
     <p>Si usted ha tenido algun encuentro o contacto con algun tipo de Pelusa, comparta su experiencia con nosotros, así como cualquier documento multimedia de la experiencia que pueda haber obtenido, toda información es poca.</p>
-    <form action="">
-        <div>
-        <label for="experienciapersonal">Cuentanos tu experiencia:</label>
-        <textarea rows = "5" cols = "60" name = "description" placeholder="Escriba aquí su experiencia..." id="experienciapersonal"></textarea>
-        <label for="archivomultimedia">Cargue aquí cualquier archivo relacionado:</label><input type="file" name="archivomultimedia" id="archivomultimedia">
-        <input type="submit" value="Enviar"> <input type="reset" value="Restablecer">
-    </div>
+    <form action="" id="experienciaconpelusas">
+        
+        <div id="textarea-form">
+            <label for="experienciapersonal">Cuentanos tu experiencia:</label>
+            <textarea rows = "5" cols = "60" name = "description" placeholder="Escriba aquí su experiencia..." id="experienciapersonal"></textarea>
+        </div>
+        <div id="addfile-form">
+            <label for="archivomultimedia">Cargue aquí cualquier   archivo relacionado:</label>
+            <input type="file" name="archivomultimedia" id="archivomultimedia">
+        </div>
+       <div>
+           <input type="submit" value="Enviar"> <input type="reset" value="Restablecer">
+        </div> 
+    
     </form>
-</section>
+</article>
     </main>
     <footer>
         <p> Gracias por visitar Pelusasbusters</p>

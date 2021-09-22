@@ -1,10 +1,13 @@
 @font-face {
   font-family: blackcharency;
   src:url(../assets/fonts/BLKCHCRY.TTF)}
-
+  @font-face {
+    font-family: immortal;
+    src:url(../assets/fonts/IMMORTAL.ttf)}
 body{
   background: rgb(255,240,230);
   background: linear-gradient(90deg,rgb(136, 111, 93) 0%, rgba(253, 206, 174,0.8) 50%, rgb(136, 111, 93) 100%);
+  background-image: url(../assets/images/papiro-background-11.jpg);
 }
 header{
   background: rgb(255,240,230);
@@ -15,13 +18,11 @@ header{
   align-items: center;
   border-style: solid;
   border-width: 4px;
-  border-color:rgba(83,52,30,1);
+  border-color:rgba(83,52,30,0.8);
   padding: 0px 0px 0px 0px;
-  box-shadow: 0px 7px 14px 7px rgba(0,0,0,1);
+  box-shadow: 0px 7px 14px 5px rgba(0,0,0,0.7);
   width: 100%;
-
 }
-
 h1{
   background-color: rgba(83,52,30,0.87718837535014);
   text-decoration: underline whitesmoke;
@@ -34,13 +35,11 @@ h1{
   border-radius: 2%;
   box-shadow: 0px 5px 20px 20px rgba(69,27,27,1);
   width: 20rem;
-
   height: 5rem;
-  
 }
 section.header{
   display: flex;
-  
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
@@ -48,10 +47,11 @@ p.header{
   display: flex;
   color: whitesmoke;
   font-size: 1.4rem;
+  letter-spacing: 5px;
   font-weight: bold;
   font-family: blackcharency ,Helvetica, sans-serif;
-  width: 25rem;
-  margin: 0px 0px 5px 25px;
+  width: 30rem;
+  margin: 0px 0px 5px 60px;
 }
 nav.header{
   display: flex;
@@ -61,13 +61,14 @@ nav.header{
 }
 a.navegador{
   background-color: rgba(83,52,30,0.87718837535014);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   border-style: solid;
   border-color: rgba(83,52,30,0.87718837535014);
-  border-bottom-left-radius: 15%;
-  border-top-left-radius: 15%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
   padding: 2px 0px 2px 10px;
-  box-shadow: -2px 0px 5px 1px rgba(255,242,0,1);
+  margin: 0.25rem 0rem;
+  box-shadow: -2px 0px 5px 1px rgba(255,242,0,0.8);
 }
 a:link {
   color: rgb(255, 255, 255);
@@ -80,38 +81,213 @@ a:visited {
 }
 
 a:hover {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: underline;
 }
 
 a:active {
   color: blueviolet;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
 }
 
 
 
 footer{
-  background: rgb(255,240,230);
-  background: linear-gradient(90deg, rgba(253, 206, 174,0.1) 0%,
-  rgba(83,52,30,1) 30%,
-  rgba(83,52,30,1) 70%,
-  rgba(253, 206, 174,0.1) 100%);
+  background: rgba(83,52,30,1)  ;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-style: solid;
   border-width: 4px;
-  border-color:rgba(83,52,30,1);
+  border-color:rgb(80, 48, 25);
   padding: 0px 0px 0px 0px;
-  box-shadow: 0px 7px 14px 7px rgba(0,0,0,1);
+  box-shadow: 0px -7px 14px 5px rgba(0,0,0,0.7);
   width: 100%;
 }
 footer p{
-  background-color: rgba(83,52,30,0.5);
   font-family: blackcharency ,Helvetica, sans-serif;
   font-size: 1.4rem;
-  border-radius: 30%;
   color:yellow
+}
+footer a:link,footer a:visited{
+  text-decoration: underline
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 3rem 1rem 3rem;
+}
+
+section.index-main,section.bio-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main article{
+  background-image: url(../assets/images/papiro-background.jpg);
+  border-style: solid;
+  border-width: 4px;
+  border-color:rgb(80, 48, 25);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: -2px 0px 5px 1px rgba(255,242,0,0.8);
+  width: 100%;
+}
+main article:hover{
+  zoom: 120%;
+  box-shadow: -2px 0px 5px 2px crimson;
+
+}
+section#section-multimedia article:hover, main#main-contacto article:hover{
+  zoom: 0%;
+}
+
+ main p{
+   color: rgb(0, 0, 0);
+   font-size: 1.2rem;
+   font-family: immortal ,Helvetica, sans-serif;
+   line-height:2rem;
+   text-align: justify;
+   margin: 0px 10px;
+
+ }
+
+h2, h3{
+  color: rgb(0, 0, 0);
+  font-family: blackcharency ,Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline dotted;
+}
+article.articulo-bio{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+div.parrafoimagen-bio{
+  display: flex;
+  flex-direction: row;
+  
+  align-self: center;
+  padding: 0.3rem;
+  margin: 1rem 1rem;
+}
+div.parrafo-bio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+}
+div.pelusahitler{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+img.img-bio{
+  width: 40rem;
+  height: 30rem;
+}
+img.pelusahitler{
+  width: 38rem;
+  height: 15rem;
+}
+
+div#contenedor-imagenes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#contenedor-imagenes div{
+  width: 21rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+div#contenedor-imagenes img{
+  width: 20rem;
+  height: 15rem;
+  margin: 1rem 1rem;
+}
+
+
+div#contenedor-imagenes p{
+  text-align: center;
+}
+div#contenedor-videos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div#contenedor-videos div{
+  
+  width: 35rem;
+  height: auto;
+  margin: 4rem 1rem;
+  font-size: 2rem;
+}
+div#contenedor-videos iframe,div#contenedor-videos video{
+  width: 560px;
+  height: 315px;
+}
+
+div#contenedor-audio{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+div#contenedor-audio div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form#seguridadciudadana, form#experienciaconpelusas{
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+  border-style:solid;
+  border-color: rgb(80, 48, 25) ;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  font-family: immortal;
+}
+
+form#seguridadciudadana div{
+  margin: 0.7rem 0.7rem;
+}
+form#seguridadciudadana select{
+  width: 30rem;
+}
+div#reaccion input, div#armas input{
+  margin: 0rem 1rem;
+}
+
+form#experienciaconpelusas div{
+margin: 1rem 1rem;
+}
+
+div#textarea-form, div#addfile-form{
+  display: flex;
+  flex-direction: column;
+}
+textarea{
+  background-color: ivory;
+  border-color: rgb(80, 48, 25);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  padding: 20px;
 }
